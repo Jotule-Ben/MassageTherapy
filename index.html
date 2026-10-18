@@ -262,9 +262,9 @@ A signature extended ritual combining massage, focused relief work, and indulgen
  
 <div class="info-card contact-card">
 <h3>Reach Out</h3>
-<p>WhatsApp: <a href="https://wa.me/2348000000000">+234 800 000 0000</a></p>
+<p>WhatsApp: <a href="https://wa.me/2347067886612">+234 706 788 6612</a></p>
 <p>Instagram: <a href="https://instagram.com/kimstherapy">@kimstherapy</a></p>
-<p>Email: <a href="mailto:bookings@kimstherapy.com">bookings@kimstherapy.com</a></p>
+<p>Email: <a href="mailto:ojotule192@gmail.com">ojotule192@gmail.com</a></p>
 <button class="btn btn-primary" data-scroll-target="#services">Start Booking</button>
 </div>
 </div>
@@ -368,6 +368,23 @@ After submission, you will receive payment confirmation instructions to finalize
 </div>
 </div>
  
+<script src="config.js"></script>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+  // Initialize Firebase using APP_CONFIG
+  const app = initializeApp(window.APP_CONFIG.firebase);
+  const db = getFirestore(app);
+
+  // Make db and functions globally accessible for your form handling script
+  window.db = db;
+  window.addDoc = addDoc;
+  window.collection = collection;
+  window.serverTimestamp = serverTimestamp;
+</script>
+
 <script src="./script.js"></script>
 </body>
 </html>
