@@ -10,7 +10,6 @@ messagingSenderId: "763430446289",
 appId: "1:763430446289:web:c98a2d061715b087c791f0"
 },
 resend: {
-    // apiKey: "re_d8pXwmZv_37fkSopoLCmVhNHDYDxDSvYE"
     apiKey: "re_your_api_key_here"
   }
 };
